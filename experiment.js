@@ -790,7 +790,7 @@ var avoidance_key = "C";
   // init ---------------------------------------------------------------------------------
   var saving_id = function(){
     database
-        .ref("participant_id_mae/")
+        .ref("participant_id_AA_BW/")
         .push()
         .set({session_id: session_id,
           	   prolific_id: prolific_id,
@@ -804,7 +804,7 @@ var avoidance_key = "C";
   // vaast trial --------------------------------------------------------------------------
   var saving_vaast_trial = function(){
   	database
-  	  .ref("vaast_trial_mae/").
+  	  .ref("vaast_trial_AA_BW/").
       push()
         .set({session_id: session_id,
           prolific_id: prolific_id,
@@ -818,7 +818,7 @@ var avoidance_key = "C";
 
   var saving_extra = function() {
   	database
-  	 .ref("extra_info_mae/")
+  	 .ref("extra_info_AA_BW/")
      .push()
   	 .set({session_id: session_id,
   	 	   prolific_id: prolific_id,
@@ -833,7 +833,7 @@ var avoidance_key = "C";
 
   var saving_browser_events = function(completion) {
   	database
-  	 .ref("browser_event_mae/")
+  	 .ref("browser_event_AA_BW/")
      .push()
   	 .set({session_id: session_id,
   	 	   prolific_id: prolific_id,
