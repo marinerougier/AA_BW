@@ -1539,11 +1539,13 @@ var avoidance_key = "C";
       "<p class='instructions'>You are now finished with this study.<p>" +
       "<p class='instructions'>In this study, we were interested in the measure of " +
       "approach and avoidance tendencies. Research show that individuals are generally " +
-      "faster to approach positive stimuli and to avoid negative stimuli (rather than the reverse). </p>" +
-      "<p class='instructions'> Here, we wanted to see if this effect was larger for words " +
-      "compared to images. </p>" +
+      "faster to approach stimuli (i.e., first names or faces) relating to their own group "+
+      "(e.g., faces of White individuals for White people) and to avoid stimuli relating to other groups "+
+      "(e.g., faces of Black individuals for White people) rather than the reverse.</p>" +
+      "<p class='instructions'> Here, we wanted to see if this effect was larger for first names " +
+      "compared to faces. </p>" +
       "<p class='instructions'>For more information to this topic, please email " +
-      "marine.rougier@uclouvain.be</p>" +
+      "marine.rougier@ugent.be</p>" +
       "<p class = 'continue-instructions'>Press <strong>space</strong> to continue.</p>",
     choices: [32]
   };
