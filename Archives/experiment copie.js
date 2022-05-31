@@ -1631,9 +1631,9 @@ var avoidance_key = "C";
 
   // Launch experiment --------------------------------------------------------------------
   // preloading ---------------------------------------------------------------------------
-
-  var preloadimages = [];
-
+  // Preloading. For some reason, it appears auto-preloading fails, so using it manually.
+  // In principle, it should have ended when participants starts VAAST procedure (which)
+  // contains most of the image that have to be pre-loaded.
   var loading_gif               = ["media/loading.gif"]
   var vaast_instructions_images = ["media/vaast-background.png", "media/keyboard-vaastt.png"];
   var vaast_bg_filename         = background;
@@ -1691,17 +1691,15 @@ var avoidance_key = "C";
 									    "stimuli/test/CFD-BM-249-235-N.png"
 									    ];
 
-   preloadimages.push(loading_gif);
-   preloadimages.push(vaast_instructions_images);
-   preloadimages.push(vaast_bg_filename);
-   preloadimages.push(vaast_stimuli_images);
-
+  jsPsych.pluginAPI.preloadImages(loading_gif);
+  jsPsych.pluginAPI.preloadImages(vaast_instructions_images);
+  jsPsych.pluginAPI.preloadImages(vaast_bg_filename);
+  jsPsych.pluginAPI.preloadImages(vaast_stimuli_images)
   // timeline initiaization ---------------------------------------------------------------
 
   if(is_compatible) {
     jsPsych.init({
         timeline: timeline,
-        preload_images: preloadimages,
         on_interaction_data_update: function() {
           saving_browser_events(completion = false);
         },
