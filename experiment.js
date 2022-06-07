@@ -96,8 +96,8 @@
   });
 
 // Global variables:
-var approach_key  = "E";
-var avoidance_key = "C";
+var approach_key  = "T";
+var avoidance_key = "B";
 
 // do something in the background
    // cursor helper functions -------------------------------------------------------------
@@ -1006,11 +1006,11 @@ var avoidance_key = "C";
     stimulus:
       "<h1 class ='custom-title'>Video Game Task</h1>" +
       "<p class='instructions'>At the beginning of each trial, you will see the 'O' symbol. This symbol " +
-      "indicates that you have to press the <b>START key</b> (namely the <b>D key</b>) to start the trial.</p>" +
+      "indicates that you have to press the <b>START key</b> (namely the <b>G key</b>) to start the trial.</p>" +
       "<p class='instructions'>Then, you will see a fixation cross (+) at the center of the screen, followed " +
       "by a first name or a face.</p>" +
       "<p class='instructions'>Your task is to move forward or backward by pressing the <b>MOVE FORWARD</b> " +
-      "(the <b>E key</b>) or the <b>MOVE BACKWARD</b> (the <b>C key</b>) key <strong>as fast as possible</strong>.</p>" +
+      "(the <b>T key</b>) or the <b>MOVE BACKWARD</b> (the <b>B key</b>) key <strong>as fast as possible</strong>.</p>" +
       "<p class='instructions'>For all of these actions, please only use the index of your dominant hand.</p>" +
       "<p class='continue-instructions'>Press <strong>space</strong> to start Task 1.</p>",
     choices: [32]
