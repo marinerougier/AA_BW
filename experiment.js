@@ -142,7 +142,7 @@ var avoidance_key = "B";
    }
 
   // prolific variables
-  var prolific_id = jsPsych.data.getURLVariable('prolific_id');
+  var prolific_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
   if(prolific_id == null) {prolific_id = "999";}
 
   // counter variables
